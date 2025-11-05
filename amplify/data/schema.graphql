@@ -1,0 +1,14 @@
+type Attendance @model
+  @auth(rules: [
+    { allow: owner, ownerField: "profileOwner", operations: [create, read] },
+    { allow: groups, groups: ["Admins"], operations: [read, update, delete] }
+  ]) 
+  {
+  id: ID!
+  profileOwner: String
+  attendeeEmail: String
+  courseCode: String
+  classDate: AWSDate!
+  status: String!
+  markedAt: AWSDateTime!
+  }
