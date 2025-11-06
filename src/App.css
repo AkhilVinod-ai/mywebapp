@@ -182,3 +182,107 @@
 
 .signout-btn { margin-top: 1rem; background: transparent; border: 1px solid #00eaff; color: #00eaff; }
 .signout-btn:hover { background: #00eaff; color: #001018; }
+
+/* Login page header styling */
+.login-header {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 3rem;
+  color: #00eaff;
+}
+
+.course-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00eaff99;
+  margin-bottom: 1rem;
+}
+
+.portal-title {
+  font-size: 1.8rem;
+  text-shadow: 0 0 15px #00eaff;
+  margin-bottom: 0.3rem;
+}
+
+.portal-tagline {
+  color: #aefcff;
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-shadow: 0 0 8px #00eaff44;
+}
+
+/* Centered Login Layout */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #00eaff;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Title and tagline styling */
+.portal-title {
+  font-size: 2rem;
+  text-shadow: 0 0 20px #00eaff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.portal-tagline {
+  color: #baf9ff;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+  text-shadow: 0 0 10px #00eaff33;
+}
+
+/* Neon separator line */
+.neon-line {
+  width: 240px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00eaff, transparent);
+  box-shadow: 0 0 15px #00eaff88;
+  margin-bottom: 2rem;
+}
+
+/* Authenticator box */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Amplify UI overrides */
+.amplify-tabs-item {
+  color: #00eaff !important;
+}
+
+.amplify-tabs-item[data-state="active"] {
+  text-shadow: 0 0 10px #00eaff;
+  border-bottom: 2px solid #00eaff !important;
+}
+
+.amplify-button[data-variation="primary"] {
+  background: #00eaff !important;
+  color: #000 !important;
+  box-shadow: 0 0 15px #00eaffaa;
+}
+
+.amplify-input {
+  background: rgba(0, 20, 40, 0.85) !important;
+  color: #00eaff !important;
+  border: 1px solid #00eaff33 !important;
+  border-radius: 6px !important;
+}
